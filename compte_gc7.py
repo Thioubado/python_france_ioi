@@ -1,0 +1,1 @@
+print (*[compte for compte in range(10)], sep='\n')
