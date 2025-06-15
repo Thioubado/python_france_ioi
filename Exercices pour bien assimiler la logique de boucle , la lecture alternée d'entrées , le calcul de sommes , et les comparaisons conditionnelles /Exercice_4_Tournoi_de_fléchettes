@@ -1,0 +1,54 @@
+"""
+Exercice 4 : Tournoi de fléchettes
+Ton programme doit :
+
+Lire le nombre de lancés par joueur (pour deux joueurs).
+Lire les points obtenus à chaque lancé, en alternant entre les deux joueurs.
+Faire la somme des points pour chaque joueur.
+Afficher le joueur avec le plus de points.
+Exemple :
+
+
+
+1
+2
+3
+4
+5
+6
+7
+3
+20
+15
+18
+16
+19
+17
+Sortie attendue :
+
+
+
+1
+2
+3
+Le joueur 1 a un avantage
+Points du joueur 1 : 57
+Points du joueur 2 : 4
+"""
+nombre_de_lancés_par_joueur = int(input())
+
+joueur_1 = 0
+joueur_2 = 0
+
+for i in range(nombre_de_lancés_par_joueur * 2):
+    points_obtenus_à_chaque_lancé = int(input())
+    if i % 2 == 0:
+        joueur_1 += points_obtenus_à_chaque_lancé
+    else:
+        joueur_2 += points_obtenus_à_chaque_lancé
+if joueur_1 > joueur_2:
+    print("Le joueur 1 a un avantage")
+else:
+    print("Le joueur 2 a un avantage")
+print("Points du joueur 1 : ", joueur_1)
+print("Points du joueur 2 : ", joueur_2)
