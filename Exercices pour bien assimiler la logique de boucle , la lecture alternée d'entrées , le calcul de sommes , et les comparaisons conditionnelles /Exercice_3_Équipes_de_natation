@@ -6,7 +6,6 @@ for i in range(nombre_de_nageurs_par_équipe * 2):
     if i % 2 == 0:
         équipe_1 = équipe_1 + temps_individuels
     else:
-        
         équipe_2 = équipe_2 + temps_individuels
 if équipe_1 < équipe_2:
     print("L'équipe 1 a un avantage")
