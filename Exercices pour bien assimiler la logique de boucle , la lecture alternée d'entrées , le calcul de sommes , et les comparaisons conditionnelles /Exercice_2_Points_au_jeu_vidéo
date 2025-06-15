@@ -1,0 +1,51 @@
+"""
+🧩 Exercice 2 : Points au jeu vidéo
+Ton programme doit :
+
+Lire un entier : le nombre de manches jouées.
+Lire deux scores par manche (équipe 1 puis équipe 2).
+Additionner tous les points de chaque équipe.
+Afficher l’équipe avec le plus de points.
+Exemple :
+
+
+
+1
+2
+3
+4
+5
+2
+15
+10
+20
+25
+Sortie attendue :
+
+
+
+1
+2
+3
+L'équipe 1 a un avantage
+Points équipe 1 : 35
+Points équipe 2 : 35
+⚠️ Ici, il y a égalité, mais dans ce cas, ton énoncé peut dire que cela n’arrive jamais, ou demander d'afficher "Match nul".
+
+"""
+
+nombre_de_manches_jouées = int(input())
+équipe_1 = 0
+équipe_2 = 0
+for i in range(nombre_de_manches_jouées * 2):
+    temps_par_manche = int(input())
+    if i % 2 == 0:
+        équipe_1 = équipe_1 + temps_par_manche
+    else: 
+        équipe_2 = équipe_2 + temps_par_manche
+if équipe_1 > équipe_2 :
+    print("L'équipe 1 a un avantage")
+elif équipe_1 == équipe_2 :
+    print("Match nul")
+else:
+    print("L'équipe 2 a un avantage")
