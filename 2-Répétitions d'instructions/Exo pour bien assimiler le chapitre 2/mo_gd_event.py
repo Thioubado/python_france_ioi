@@ -41,39 +41,20 @@ def droite():
 def exemple_1():
     cls()
     
-    l=4 # Réduis la taille du problème, et quand ça marchera là, tu mettras 10 ici !
+    L = 4 # Réduis la taille du problème, et quand ça marchera là, tu mettras 10 ici !
     
-    for loop in range(l-1):
-        haut()
-    for loop in range(l-1):
-        droite()
-        bas()
-    for loop in range(l-2):
-        gauche()
-        bas()
-    for loop in range(l-2):
-        droite()
-        bas()
-    for loop in range(l-2):
-        gauche()
-        bas()
-    for loop in range(l-2):
-        droite()
-        bas()
-    for loop in range(l-2):
-        gauche()
-        bas()
-    for loop in range(l-2):
-        droite()
-        bas()
-    for loop in range(l-2):
-        gauche()
-        bas()
-    for loop in range(l-2):
-        droite()
-        bas()
-    for loop in range(l-1):
-        gauche()
+    for colonne in range(L):
+        if colonne % 2 == 0:
+            for _ in range(L - 1):
+                haut()  
+        else:
+            for _ in range(L - 1):
+                bas()
+        if colonne < L-1:
+            droite()
+        for _ in range(L - 1):
+            gauche()
+        
     end()
 
 if __name__ == "__main__":
@@ -84,27 +65,21 @@ if __name__ == "__main__":
 
 # Dois-je te répéter exactement la même chose que la veille ?
 
-# Ton résultat avec les chiffres en dur :
+# Ton résultat :
 
-# ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ← ← ← ← ← ← ← ← 
+# ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ← ← ← ← ← ← ← ← ← ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ → ← ← ← ← ← ← ← ← ← ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ← ← ← ← ← ← ← ← ← ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ → ← ← ← ← ← ← ← ← ← ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ← ← ← ← ← ← ← ← ← ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ → ← ← ← ← ← ← ← ← ← ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ← ← ← ← ← ← ← ← ← ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ → ← ← ← ← ← ← ← ← ← ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ← ← ← ← ← ← ← ← ← ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ← ← ← ← ← ← ← ← ←
 
-# Avec la variable l=10 :
+# On réduit donc le problème avec L = 4, ce qui donne :
 
-# ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ ← ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ → ↓ ← ← ← ← ← ← ← ← ←
-
-# → Bref, le script avec la variable marche pareil.
-
-# On réduit donc le problème avec l = 4, ce qui donne :
-
-# ↑ ↑ ↑ → ↓ → ↓ → ↓ ← ↓ ← ↓ → ↓ → ↓ ← ↓ ← ↓ → ↓ → ↓ ← ↓ ← ↓ → ↓ → ↓ ← ↓ ← ↓ → ↓ → ↓ ← ← ←
+# ↑ ↑ ↑ → ← ← ← ↓ ↓ ↓ → ← ← ← ↑ ↑ ↑ → ← ← ← ↓ ↓ ↓ ← ← ← 
 
 # Ce script tourne dans un workspace, je t'en ai fait un PR :-) !
 
-# https://prnt.sc/13TpwcM0Yy-r
+# https://prnt.sc/vCuj6_sd024w
 
 
 # Prends une feuille de 4 cases X 4 cases, et tu verras vite le problème ! ;-) ! :
 
-# Bon, c'est quand-même mieux que la veille ! :
+# Et du coup, on voit bien que c'est pas mieux que la veille ! :-( :
 
-# https://prnt.sc/1vzgQxTEcIb2
+# https://prnt.sc/5tCfRIS0yb1W
