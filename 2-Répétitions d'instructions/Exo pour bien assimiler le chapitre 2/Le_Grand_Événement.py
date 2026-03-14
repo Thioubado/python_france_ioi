@@ -79,7 +79,7 @@ for loop in range(9):
 
 '''
 
-L = 10
+"""L = 10
 for colonne in range(L):
    if colonne % 2 == 0:
       for _ in range(L - 1):
@@ -90,5 +90,31 @@ for colonne in range(L):
    if colonne < L-1:
       droite()
    for _ in range(L - 1):
-      gauche()
+      gauche()"""
+
+
+'''for tour in range(108):
+    for _ in range(13):
+        haut()
+    for _ in range(13):
+        droite()
+    for _ in range(13):
+        bas()
+    for _ in range(13):
+        gauche()'''
    
+l=4
+c=0
+for loop in range(l):
+   print("haut")
+   for loop in range(l):
+      l=c+1
+      print("droite")
+
+    
+
+
+
+
+
+
