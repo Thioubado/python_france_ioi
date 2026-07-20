@@ -1,0 +1,113 @@
+NIVEAU 1 : Lecture de tableau
+
+Exercice 1 : Notes d'élèves
+
+Lire un nombre d'élèves, puis un nombre de matières.
+Pour chaque élève, lire ses notes dans chaque matière.
+Afficher le tableau complet.
+
+=====================
+Exercice 2 : Inventaire magasin
+
+Lire un nombre de rayons, puis un nombre de produits par rayon.
+Pour chaque rayon, lire le prix de chaque produit.
+Afficher le tableau.
+
+=====================
+
+NIVEAU 2 : Calculs par ligne
+
+Exercice 3 : Total par élève
+
+Même entrée que l'exercice 1.
+Calculer et afficher la MOYENNE de chaque élève.
+
+=====================
+
+Exercice 4 : Total par rayon
+
+Même entrée que l'exercice 2.
+Calculer et afficher le TOTAL des prix par rayon.
+
+=====================
+
+NIVEAU 3 : Calculs par colonne
+
+Exercice 5 : Moyenne par matière
+
+Même entrée que l'exercice 1.
+Calculer et afficher la MOYENNE de chaque MATIÈRE (colonne).
+
+=====================
+
+Exercice 6 : Prix moyen par produit
+
+Même entrée que l'exercice 2.
+Calculer le prix MOYEN de chaque position de produit (colonne).
+
+=====================
+
+NIVEAU 4 : Écarts et comparaisons
+
+Exercice 7 : Écart à la moyenne par matière
+
+Même entrée que l'exercice 1.
+Pour chaque élève et chaque matière, afficher l'écart à la moyenne de la matière.
+
+=====================
+
+Exercice 8 : Budget familial
+
+Lire un nombre de mois et un nombre de catégories de dépenses.
+Pour chaque mois, lire les dépenses par catégorie.
+Afficher pour chaque mois : total des dépenses.
+Afficher pour chaque catégorie : moyenne mensuelle.
+
+=====================
+
+NIVEAU 5 : Recherches et extrêmes
+
+Exercice 9 : Meilleur et pire élève
+
+Même entrée que l'exercice 1.
+Trouver :
+- L'élève avec la meilleure moyenne générale
+- La meilleure note dans chaque matière
+- La note la plus faible du tableau
+
+=====================
+
+Exercice 10 : Stock magasin
+
+Lire un nombre de rayons et un nombre de produits.
+Pour chaque produit, lire : prix et quantité en stock.
+Calculer :
+- Valeur totale du stock par rayon
+- Produit le plus cher du magasin
+- Rayon avec la plus grande valeur totale
+
+=====================
+
+NIVEAU 6 : Mini-projet
+
+Exercice 11 : Planning sportif
+
+Lire un nombre de joueurs et un nombre de semaines.
+Pour chaque joueur et chaque semaine, lire : minutes jouées.
+Afficher :
+- Minutes totales par joueur
+- Minutes moyennes par semaine (tous joueurs confondus)
+- Joueur le plus utilisé
+- Semaine avec le plus de minutes jouées au total
+
+=====================
+
+Exercice 12 : Matrice (bonus)
+
+Lire une taille N.
+Lire une matrice N x N de nombres.
+Calculer :
+- Somme de chaque ligne
+- Somme de chaque colonne
+- Somme de la diagonale principale
+- Transposée de la matrice
