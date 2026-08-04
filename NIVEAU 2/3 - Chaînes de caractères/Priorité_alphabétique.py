@@ -9,3 +9,4 @@ elif nom_2 < nom_1:
     print(nom_2)
 else:
     pass
+# dsgs
